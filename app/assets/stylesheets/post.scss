@@ -1,0 +1,116 @@
+// Place all the styles related to the post controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.body {
+    background-color: #000;
+    color: rgb(255, 255, 255);
+}
+.post_title { 
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    width : 620px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+    width:800px;
+    display:inline-block;
+}
+.post_time { color:rgb(255, 255, 255); font-size: 36px;}
+
+.post_content_label {
+    color:rgb(255, 255, 255);
+    font-size: 36px;
+}
+
+.post_content { 
+    color:rgb(255, 255, 255);
+    font-size: 36px;
+    width : 800px;
+
+    text-align: justify;
+    text-justify: newspaper;
+    word-break: break-all;
+    display: inline-block;
+    vertical-align:top;
+}
+a {
+    color: rgb(184, 80, 51);
+    text-decoration:none;
+    font-size: 24px;
+}
+
+.delete {
+    font-size: 24px;
+    display:inline;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: rgb(184, 80, 51);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.comment_label {
+    color:rgb(255, 255, 255);
+    font-size: 36px;
+}
+
+.comment {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    width : 620px;
+    text-align: justify;
+    text-justify: newspaper;
+    word-break: break-all;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.comment_from {
+    color: rgb(179, 179, 241);
+    font-size: 36px;
+    width: 600px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+    display:inline-block;
+}
+.title_right{float:right;}
+
+.edit_post_conent_text {
+    width: 400px;
+    height: 400px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    vertical-align:top;
+}
+
+
+.post_edit_title {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+
+.post_submit {
+    width: 520px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  

@@ -1,0 +1,90 @@
+post_comment1:
+  id: 1
+  comment_id: 1
+  post_id: 1
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment2:
+  id: 2
+  comment_id: 2
+  post_id: 2
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment3:
+  id: 3
+  comment_id: 3
+  post_id: 3
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment4:
+  id: 4
+  comment_id: 4
+  post_id: 4
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment5:
+  id: 5
+  comment_id: 5
+  post_id: 5
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment6:
+  id: 6
+  comment_id: 6
+  post_id: 6
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment7:
+  id: 7
+  comment_id: 7
+  post_id: 7
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment1:
+  id: 1
+  comment_id: 1
+  post_id: 1
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment8:
+  id: 8
+  comment_id: 8
+  post_id: 8
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment1:
+  id: 1
+  comment_id: 1
+  post_id: 1
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment9:
+  id: 9
+  comment_id: 9
+  post_id: 9
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment10:
+  id: 10
+  comment_id: 10
+  post_id: 10
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment11:
+  id: 11
+  comment_id: 11
+  post_id: 11
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment12:
+  id: 12
+  comment_id: 12
+  post_id: 11
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+post_comment13:
+  id: 13
+  comment_id: 13
+  post_id: 11
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>

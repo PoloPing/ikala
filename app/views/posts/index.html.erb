@@ -1,0 +1,45 @@
+<%= stylesheet_link_tag    "application" %>
+<% if current_user %>
+    <%= link_to('登出', destroy_user_session_path, :method => :delete) %> |
+    <%= link_to('發表文章', new_post_path) %>
+    <% else %>
+    <%= link_to('註冊', new_registration_path(:user)) %> |
+    <%= link_to('登入', new_session_path(:user)) %> |
+    <%= link_to('FB登入', user_facebook_omniauth_authorize_path, :method=> :post)%>
+<% end %>
+<hr class="solid">
+<%if @posts != []%>
+    <% @posts.each_with_index do |post, idx| %>
+        <div>
+            <div>
+                <span class="post_title">標題: <%= post.title %></span>
+                <span class="title_right">
+                    <% if current_user%>
+                        <% if current_user.id == post.user_id%>
+                            <span><%= link_to '編輯文章', edit_post_path(post) %></span>
+                            <span><%= button_to '刪除文章', post_path(post), :method => :delete, :class => "delete", :form_class => "delete"%></span>
+                        <% end %>
+                        <span><%= link_to '評論', new_comment_path(:post_id => post.id) %></span>
+                    <% end %>
+                </span>
+            </div>
+            <div>
+                <span class="post_title">作者: <%= post.user.email %></span>
+            </div>
+            <div class="post_time">
+                <span>時間: <%= post.created_at.strftime("%Y.%m.%d") %></span>
+            </div>
+            <div>
+                <span class="post_content_label">內容: </span><span class="post_content"><%= post.content %></span>
+            </div>
+
+            <% post.comments.each do |comment| %>
+                <div>
+                    <span class="comment_label">評論: </span><span class="comment"><%= comment.content %></span><span class="title_right comment_from">from: <%= comment.user.email %></span>
+                </div>
+            <% end %>
+            <hr class="solid">
+        </div>
+    <% end %>
+    <%= paginate @posts %>
+<% end %>

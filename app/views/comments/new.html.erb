@@ -1,0 +1,15 @@
+<% if :notice %>
+  <%= @notice %>
+<% end %>
+<div>
+  <%= form_tag({ controller: "comments", action: "create" }, method: "post") do%>
+    <%= hidden_field_tag(:post_id, @post_id) %>
+    <div>
+      <%= label_tag(:content, "評論") %>
+      <%= text_area_tag(:content, '', class: 'comment_edit_content') %>
+    </div>
+    <div>
+      <%= submit_tag("發表評論", class: 'comment_submit')%>
+    </div>
+  <% end %>
+</div>

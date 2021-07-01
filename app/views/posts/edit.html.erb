@@ -1,0 +1,18 @@
+<% if :notice %>
+  <%= @notice %>
+<% end %>
+<div>
+  <%= form_for Post.new, :url => { :controller => 'posts', :action => 'update'}, :method => :put do |f| %>
+      <div>
+        <%= f.label :title, "標題" %>
+        <%= f.text_field :title, value: @post.try(:title), class: 'post_edit_title'%>
+      </div>
+      <div>
+        <%= f.label :content, "內容" %>
+        <%= f.text_area :content, value: @post.try(:content), class: 'edit_post_conent_text'%>
+      </div>
+      <div>
+        <%= f.submit "發表文章", class: 'post_submit'%>
+      </div>
+  <% end %>
+</div>
